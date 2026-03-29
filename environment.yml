@@ -1,0 +1,28 @@
+name: fno_class
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12.3
+  - pytorch=2.7.1
+  - torchvision
+  - torchaudio
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - jupyter
+  - notebook
+  - ipykernel
+  - h5py
+  - openpyxl
+  - pyyaml
+  - tqdm
+  - pip
+  - pip:
+      - seisbench
+      - obspy
+      - huggingface-hub
