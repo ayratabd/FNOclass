@@ -1,6 +1,6 @@
 # FNOclass
 
-Lightweight seismic event classification using a Fourier Neural Operator (FNO).
+Seismic event classification with a lightweight Fourier Neural Operator model (FNO).
 
 ## Overview
 
