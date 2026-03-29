@@ -142,10 +142,10 @@ Figures included in this repository should be limited to material you are author
 
 For questions, suggestions, or collaboration inquiries:
 
-**Ayrat Abdullin**
-Department of Geosciences
-King Fahd University of Petroleum and Minerals
-Dhahran, Saudi Arabia
+**Ayrat Abdullin**<br>
+Department of Geosciences<br>
+King Fahd University of Petroleum and Minerals<br>
+Dhahran, Saudi Arabia<br>
 Email: [g202203180@kfupm.edu.sa](mailto:g202203180@kfupm.edu.sa)
 
 ---
