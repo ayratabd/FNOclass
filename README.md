@@ -68,7 +68,7 @@ Create the conda environment:
 
 ```bash
 conda env create -f environment.yml
-conda activate fnoclass
+conda activate fno_class
 ```
 
 This repository uses an `environment.yml` file because it is the most convenient way to reproduce the exact software stack for notebook-based scientific workflows, especially when PyTorch and scientific Python packages are involved.
