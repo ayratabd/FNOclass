@@ -7,8 +7,6 @@ channels:
 dependencies:
   - python=3.12.3
   - pytorch=2.7.1
-  - torchvision
-  - torchaudio
   - numpy
   - pandas
   - scipy
@@ -18,11 +16,5 @@ dependencies:
   - notebook
   - ipykernel
   - h5py
-  - openpyxl
-  - pyyaml
   - tqdm
   - pip
-  - pip:
-      - seisbench
-      - obspy
-      - huggingface-hub
