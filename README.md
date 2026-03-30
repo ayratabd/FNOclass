@@ -1,5 +1,10 @@
 # FNOclass
 
+![Python 3.12.3](https://img.shields.io/badge/python-3.12.3-blue.svg)
+![PyTorch 2.7.1](https://img.shields.io/badge/PyTorch-2.7.1-EE4C2C.svg?logo=pytorch&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?logo=jupyter&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 Seismic event classification with a lightweight Fourier Neural Operator model (FNO).
 
 ## Overview
@@ -102,7 +107,11 @@ The notebook contains the full workflow, including:
 ### Public Dataset
 
 This work uses the **STEAD dataset**, a large-scale global dataset of seismic waveforms.
-Instructions for downloading the `merged.hdf5` and `stead_train500.csv` files can be found inside the notebook comments.
+
+To train the model on the full dataset and reproduce the metrics:
+1. Download the required files from this [Google Drive link](https://drive.google.com/file/d/1oiuS7ByCyE2-7rARs6jXWN34Amf-Vrbg/view).
+2. Ensure you download both `merged.hdf5` and `stead_train500.csv`.
+3. Place both files directly into the `./data/` directory.
 
 ### Microseismic Dataset
 
