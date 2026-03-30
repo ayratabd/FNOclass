@@ -47,10 +47,13 @@ Output:
 
 ```text
 FNOclass/
-│── FNOclass.ipynb      # Main notebook for preprocessing, training, evaluation, and inference
-│── environment.yml     # Conda environment specification
-│── docs/               # Figures and documentation assets
-│── data/               # Data access instructions or lightweight metadata only
+│── fno_class_main.ipynb   # Main notebook for preprocessing, training, evaluation, and inference
+│── utils.py               # Helper functions for data processing and labeling
+│── environment.yml        # Conda environment specification
+│── docs/                  # Figures and documentation assets
+│── data/                  # Directory for the full dataset (e.g., STEAD merged.hdf5)
+│── sample_data/           # Lightweight pre-processed sample data for quick testing
+│── models/                # Directory where best model checkpoints are saved during training
 │── README.md
 │── LICENSE
 ```
@@ -71,23 +74,25 @@ conda env create -f environment.yml
 conda activate fno_class
 ```
 
-This repository uses an `environment.yml` file because it is the most convenient way to reproduce the exact software stack for notebook-based scientific workflows, especially when PyTorch and scientific Python packages are involved.
-
-If needed, a pip-based `requirements.txt` can be added later as a lightweight alternative, but `environment.yml` should be the primary installation path.
+This repository uses an `environment.yml` file because it is the most convenient way to reproduce the exact software stack (Python 3.12, PyTorch 2.7.1) for notebook-based scientific workflows.
 
 ## Usage
 
 Open the main notebook:
 
 ```bash
-jupyter notebook FNOclass.ipynb
+jupyter notebook fno_class_main.ipynb
 ```
+
+**Quick Start**: The notebook is configured to run out-of-the-box using a lightweight sample dataset (`sample_data/stead_sample100.pt`). This allows you to verify the environment and run the pipeline end-to-end in seconds.
+
+To train the model on the full datasets and reproduce the paper's metrics, simply change the `USE_SAMPLE_DATA = False` toggle in the notebook and ensure the full STEAD dataset is placed in the `./data/` directory.
 
 The notebook contains the full workflow, including:
 
 * data loading and preprocessing
 * model definition
-* training
+* training with dynamic early stopping and checkpointing
 * validation and testing
 * inference on waveform windows
 * figure generation and result inspection
@@ -97,6 +102,7 @@ The notebook contains the full workflow, including:
 ### Public Dataset
 
 This work uses the **STEAD dataset**, a large-scale global dataset of seismic waveforms.
+Instructions for downloading the `merged.hdf5` and `stead_train500.csv` files can be found inside the notebook comments.
 
 ### Microseismic Dataset
 
@@ -114,8 +120,8 @@ The model demonstrates strong generalization and maintains high performance even
 ## Reproducibility
 
 * Training details and hyperparameters are provided in the paper
-* Example configs are included in `configs/`
-* Random seeds can be fixed for deterministic results
+* Random seeds are fixed (`torch.manual_seed(0)`, `np.random.seed(0)`) within the notebook for deterministic results.
+* Model checkpoints tracking the best validation loss are automatically saved to `./models/`.
 
 ## Citation
 
@@ -135,8 +141,6 @@ This repository is licensed under the MIT License.
 ## Notes on Paper Usage
 
 The published journal article is subject to copyright by the publisher. Please refer to the official publication for the final version. Do not redistribute the publisher PDF unless permitted.
-
-Figures included in this repository should be limited to material you are authorized to share. If you add the model figure from the paper, place the exported PNG in `docs/fno_model_figure.png` and include an appropriate citation or caption in this README.
 
 ## Contact
 
