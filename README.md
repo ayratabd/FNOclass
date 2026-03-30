@@ -109,9 +109,8 @@ The notebook contains the full workflow, including:
 This work uses the **STEAD dataset**, a large-scale global dataset of seismic waveforms.
 
 To train the model on the full dataset and reproduce the metrics:
-1. Download the required files from this [Google Drive link](https://drive.google.com/file/d/1oiuS7ByCyE2-7rARs6jXWN34Amf-Vrbg/view).
-2. Ensure you download both `merged.hdf5` and `stead_train500.csv`.
-3. Place both files directly into the `./data/` directory.
+1. Download the required file from this [Google Drive link](https://drive.google.com/file/d/1oiuS7ByCyE2-7rARs6jXWN34Amf-Vrbg/view).
+2. Place `merged.hdf5` file directly into the `./data/` directory.
 
 ### Microseismic Dataset
 
