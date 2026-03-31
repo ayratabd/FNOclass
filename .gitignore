@@ -209,3 +209,6 @@ __marimo__/
 # Data files
 /data/*.zip
 /data/*.hdf5
+
+# Local Models
+/models/model_stead_m*.pth

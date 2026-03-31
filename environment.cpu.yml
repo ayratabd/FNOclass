@@ -1,0 +1,22 @@
+name: fno_class_cpu
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.12.3
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - jupyter
+  - notebook
+  - ipykernel
+  - h5py
+  - tqdm
+  - pip
+  - pip:
+      # Official PyTorch 2.7.1 CPU wheels.
+      - --index-url https://download.pytorch.org/whl/cpu
+      - torch==2.7.1

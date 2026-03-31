@@ -1,0 +1,23 @@
+name: fno_class_gpu
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.12.3
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - jupyter
+  - notebook
+  - ipykernel
+  - h5py
+  - tqdm
+  - pip
+  - pip:
+      # Official PyTorch 2.7.1 CUDA 12.8 wheels for Linux and Windows.
+      # Requires a compatible NVIDIA driver on the host system.
+      - --index-url https://download.pytorch.org/whl/cu128
+      - torch==2.7.1

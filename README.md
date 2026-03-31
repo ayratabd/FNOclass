@@ -15,8 +15,8 @@ The model achieves competitive performance with significantly fewer parameters c
 
 ## Related Publication
 
-**Ayrat Abdullin, Umair Bin Waheed, Leo Eisner, Abdullatif Al-Shuhail**
-*Seismic event classification with a lightweight Fourier Neural Operator model*
+**Ayrat Abdullin, Umair Bin Waheed, Leo Eisner, Abdullatif Al-Shuhail**  
+*Seismic event classification with a lightweight Fourier Neural Operator model*  
 Geophysical Prospecting (EAGE)
 
 [Link to paper (to be added)]
@@ -26,7 +26,7 @@ If you use this repository, please cite the paper.
 ## Key Features
 
 * Lightweight architecture (~34k parameters)
-* High classification accuracy (F1 ≈ 0.95–0.98 depending on dataset)
+* High classification accuracy (F1 ≈ 0.95-0.98 depending on dataset)
 * Efficient training and inference
 * Suitable for real-time and edge deployment
 * Robust performance under limited training data
@@ -52,15 +52,16 @@ Output:
 
 ```text
 FNOclass/
-│── fno_class_main.ipynb   # Main notebook for preprocessing, training, evaluation, and inference
-│── utils.py               # Helper functions for data processing and labeling
-│── environment.yml        # Conda environment specification
-│── docs/                  # Figures and documentation assets
-│── data/                  # Directory for the full dataset (e.g., STEAD merged.hdf5)
-│── sample_data/           # Lightweight pre-processed sample data for quick testing
-│── models/                # Directory where best model checkpoints are saved during training
-│── README.md
-│── LICENSE
+|-- fno_class_main.ipynb   # Main notebook for preprocessing, training, evaluation, and inference
+|-- utils.py               # Helper functions for data processing and labeling
+|-- environment.cpu.yml    # Recommended CPU environment
+|-- environment.gpu.yml    # Recommended GPU environment
+|-- docs/                  # Figures and documentation assets
+|-- data/                  # Directory for the datasets (e.g., STEAD merged.hdf5)
+|-- sample_data/           # Lightweight pre-processed sample data for quick testing
+|-- models/                # Directory where best model checkpoints are saved during training
+|-- README.md
+|-- LICENSE
 ```
 
 ## Installation
@@ -72,14 +73,29 @@ git clone https://github.com/ayratabd/FNOclass.git
 cd FNOclass
 ```
 
-Create the conda environment:
+Create one of the recommended conda environments, for CPU-only execution:
 
 ```bash
-conda env create -f environment.yml
-conda activate fno_class
+conda env create -f environment.cpu.yml
+conda activate fno_class_cpu
 ```
 
-This repository uses an `environment.yml` file because it is the most convenient way to reproduce the exact software stack (Python 3.12, PyTorch 2.7.1) for notebook-based scientific workflows.
+or, for NVIDIA GPU acceleration:
+
+```bash
+conda env create -f environment.gpu.yml
+conda activate fno_class_gpu
+```
+
+The recommended setup files are:
+
+* `environment.cpu.yml` for CPU-only execution (tested on Windows or Linux)
+* `environment.gpu.yml` for NVIDIA GPU execution (tested on Windows or Linux)
+
+Both files use Conda for the base scientific Python stack and install the official PyTorch 2.7.1 wheel via `pip`.
+The GPU environment requires an NVIDIA GPU and a compatible NVIDIA driver on the host system.
+
+This approach ensures a consistent and reproducible development environment (Python 3.12, PyTorch 2.7.1) for both CPU and GPU users.
 
 ## Usage
 
@@ -88,6 +104,11 @@ Open the main notebook:
 ```bash
 jupyter notebook fno_class_main.ipynb
 ```
+
+Make sure Jupyter is running from the activated environment, or explicitly select the matching kernel in your IDE or notebook interface:
+
+* `fno_class_cpu` for the CPU environment
+* `fno_class_gpu` for the GPU environment
 
 **Quick Start**: The notebook is configured to run out-of-the-box using a lightweight sample dataset (`sample_data/stead_sample100.pt`). This allows you to verify the environment and run the pipeline end-to-end in seconds.
 
@@ -154,10 +175,10 @@ The published journal article is subject to copyright by the publisher. Please r
 
 For questions, suggestions, or collaboration inquiries:
 
-**Ayrat Abdullin**<br>
-Department of Geosciences<br>
-King Fahd University of Petroleum and Minerals<br>
-Dhahran, Saudi Arabia<br>
+**Ayrat Abdullin**
+Department of Geosciences
+King Fahd University of Petroleum and Minerals
+Dhahran, Saudi Arabia
 Email: [g202203180@kfupm.edu.sa](mailto:g202203180@kfupm.edu.sa)
 
 ---
@@ -167,6 +188,3 @@ Email: [g202203180@kfupm.edu.sa](mailto:g202203180@kfupm.edu.sa)
 * STEAD dataset
 * SeisBench
 * Open-source ML ecosystem (PyTorch, NumPy, etc.)
-
-
-
