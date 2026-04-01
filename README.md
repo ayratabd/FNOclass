@@ -160,6 +160,7 @@ The model demonstrates strong generalization and maintains high performance even
   title={Seismic event classification with a lightweight Fourier Neural Operator model},
   author={Abdullin, Ayrat and Waheed, Umair Bin and Eisner, Leo and Al-Shuhail, Abdullatif},
   journal={Geophysical Prospecting},
+  doi={10.1111/1365-2478.70176},
   year={2026}
 }
 ```
