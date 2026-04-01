@@ -4,6 +4,8 @@
 ![PyTorch 2.7.1](https://img.shields.io/badge/PyTorch-2.7.1-EE4C2C.svg?logo=pytorch&logoColor=white)
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?logo=jupyter&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![DOI](https://raster.shields.io/badge/DOI-10.1111%2F1365--2478.70176-blue.png)](https://doi.org/10.1111/1365-2478.70176)
+
 
 Seismic event classification with a lightweight Fourier Neural Operator model (FNO).
 
@@ -15,13 +17,12 @@ The model achieves competitive performance with significantly fewer parameters c
 
 ## Related Publication
 
+If you use this repository, please cite the paper:
+
 **Ayrat Abdullin, Umair Bin Waheed, Leo Eisner, Abdullatif Al-Shuhail**  
 *Seismic event classification with a lightweight Fourier Neural Operator model*  
-Geophysical Prospecting (EAGE)
-
-[Link to paper](https://doi.org/10.1111/1365-2478.70176)
-
-If you use this repository, please cite the paper.
+Geophysical Prospecting (EAGE)  
+<https://doi.org/10.1111/1365-2478.70176>
 
 ## Key Features
 

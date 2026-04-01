@@ -1,0 +1,57 @@
+{
+    "title": "FNOclass: seismic event classification with a lightweight Fourier Neural Operator model",
+    "version": "1.0",
+    "license": "MIT",
+    "upload_type": "software",
+    "description": "FNOclass is an implementation of a lightweight deep learning model for seismic event classification based on the Fourier Neural Operator (FNO). The method is designed for efficient and accurate classification of seismic waveforms, particularly in resource-constrained and real-time monitoring environments.",
+    "keywords": [
+        "Geophysics",
+        "Seismology",
+        "Fourier Neural Operator",
+        "Event Classification",
+        "Deep Learning"
+    ],
+    "access_right": "open",
+    "language": "eng",
+    "creators": [
+        {
+            "affiliation": "Department of Geosciences, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
+            "name": "Abdullin, Ayrat",
+            "orcid": "0000-0002-1300-046X"            
+        }
+    ],
+    "contributors": [
+        {
+            "affiliation": "Center for Integrative Petroleum Research, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
+            "name": "Anikiev, Denis",
+            "orcid": "0000-0002-4729-2659",
+            "type": "Data curator"
+        },
+        {
+            "affiliation": "Department of Geosciences, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
+            "name": "Waheed, Umair Bin",
+            "orcid": "0000-0002-5189-0694",
+            "type": "Supervisor"
+        },
+        {
+            "affiliation": "Seismik s.r.o., Prague, Czech Republic",
+            "name": "Eisner, Leo",
+            "orcid": "0000-0001-6376-4014",
+            "type": "Project member"
+        },
+        {
+            "affiliation": "Department of Geosciences, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia",
+            "name": "Al-Shuhail, Abdullatif",
+            "orcid": "0000-0002-2171-0154",
+            "type": "Project member"
+        }
+    ],
+    "related_identifiers": [
+        {
+            "identifier": "10.1111/1365-2478.70176",
+            "relation_type": "IsPublishedIn",
+            "resource_type": "publication-milestone",
+            "scheme": "doi"
+        }
+    ]
+}
