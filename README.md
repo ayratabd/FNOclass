@@ -18,6 +18,7 @@ The model achieves competitive performance with significantly fewer parameters c
 **Ayrat Abdullin, Umair Bin Waheed, Leo Eisner, Abdullatif Al-Shuhail**  
 *Seismic event classification with a lightweight Fourier Neural Operator model*  
 Geophysical Prospecting (EAGE)
+DOI: 10.1111/1365-2478.70176
 
 [Link to paper (to be added)]
 
