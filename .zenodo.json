@@ -49,7 +49,7 @@
     "related_identifiers": [
         {
             "identifier": "10.1111/1365-2478.70176",
-            "relation_type": "IsPublishedIn",
+            "relation": "IsPublishedIn",
             "resource_type": "publication-milestone",
             "scheme": "doi"
         }
