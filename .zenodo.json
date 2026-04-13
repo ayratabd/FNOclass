@@ -45,13 +45,5 @@
             "orcid": "0000-0002-2171-0154",
             "type": "Project member"
         }
-    ],
-    "related_identifiers": [
-        {
-            "identifier": "10.1111/1365-2478.70176",
-            "relation": "IsPublishedIn",
-            "resource_type": "publication-milestone",
-            "scheme": "doi"
-        }
     ]
 }
